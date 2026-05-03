@@ -1,0 +1,23 @@
+relationships:
+  - name: 'Yuan Shikai'
+    relationships:
+      - type: 'alliance'
+        with: 'Zhang Xun'
+      - type: 'conflict'
+        with: 'Li Yuanhong'
+  - name: 'Zhang Xun'
+    relationships:
+      - type: 'alliance'
+        with: 'Yuan Shikai'
+      - type: 'conflict'
+        with: 'Wu Peifu'
+  - name: 'Li Yuanhong'
+    relationships:
+      - type: 'conflict'
+        with: 'Yuan Shikai'
+      - type: 'alliance'
+        with: 'Cao Kun'
+  - name: 'Cao Kun'
+    relationships:
+      - type: 'alliance'
+        with: 'Li Yuanhong'
