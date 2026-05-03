@@ -1,0 +1,94 @@
+.beiyang-history {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #1d1d1d;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffcc00;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ffcc00;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+}
+
+.timeline-item-right {
+    left: 50%;
+}
+
+.timeline-item-left {
+    left: 0;
+}
+
+.timeline-content {
+    background-color: #242424;
+    border-radius: 6px;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .timeline-item {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.filter-controls select, .filter-controls button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #121212;
+}
+
+.relationship-diagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.rel-node {
+    background-color: #242424;
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 150px;
+    text-align: center;
+}
