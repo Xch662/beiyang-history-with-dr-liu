@@ -1,6 +1,2 @@
-# Configuration for the Beiyang History Jekyll site
-
-title: Beiyang History
-description: A static site that displays the history of Beiyang (1912-1928) using analytical methods by Liu Zhongjing.
-baseurl: ""
-url: "https://example.com"
+baseurl: "/beiyang-history-with-dr-liu"
+theme: "minima"
