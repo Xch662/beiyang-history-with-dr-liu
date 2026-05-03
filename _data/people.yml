@@ -1,0 +1,31 @@
+- name: Zhang Zuolin
+  role: Warlord and military leader
+  period_of_power: 1912-1928
+  relationships: 
+    - Duan Qirui: Ally
+    - Wu Peifu: Rival
+  historical_significance: Known for controlling Manchuria and leading the Fengtian clique, Zhang was a pivotal figure in early Republican China.
+
+- name: Duan Qirui
+  role: Warlord and political leader
+  period_of_power: 1916-1920, 1922-1924
+  relationships: 
+    - Zhang Zuolin: Ally
+    - Wu Peifu: Rival
+  historical_significance: Served as Premier of the Republic of China and was influential in military and political spheres during the Warlord Era.
+
+- name: Wu Peifu
+  role: Warlord
+  period_of_power: 1912-1924
+  relationships: 
+    - Duan Qirui: Rival
+    - Li Yuanhong: Ally
+  historical_significance: A major general known for his campaigns in northern China and control of a significant military faction during the Warlord Era.
+
+- name: Li Yuanhong
+  role: Military leader and politician
+  period_of_power: 1916, 1922-1923
+  relationships: 
+    - Wu Peifu: Ally
+    - Zhang Zuolin: Rival
+  historical_significance: Served as President of the Republic of China and was significant during the transitional periods of the early 20th century.
