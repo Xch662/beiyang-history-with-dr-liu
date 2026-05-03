@@ -1,55 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Timeline</title>
+    <title>Beiyang History Interactive Timeline</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <style>
-        /* Basic styling for timeline */
+        body { font-family: Arial, sans-serif; }
+        .search-input { margin: 15px; padding: 10px; width: 95%; }
+        .timeline { margin: 20px; }
     </style>
 </head>
-
 <body>
-    <h1>Interactive Timeline</h1>
-    <div>
-        <label for="year-filter">Filter by Year:</label>
-        <select id="year-filter">
-            <option value="">All Years</option>
-            <!-- Dynamic year options will be inserted here -->
-        </select>
-
-        <label for="category-filter">Filter by Category:</label>
-        <select id="category-filter">
-            <option value="">All Categories</option>
-            <!-- Dynamic category options will be inserted here -->
-        </select>
-
-        <input type="text" id="search" placeholder="Search events...">
+    <h1>北洋历史互动时间轴</h1>
+    <input type="text" class="search-input" placeholder="搜索事件..." oninput="filterEvents(this.value)">
+    <div class="timeline" id="timelineContent">
+        <pre class="mermaid">
+        graph TD;
+            A[事件1] --> B[事件2];
+            B --> C[事件3];
+            C --> D[事件4];
+        </pre>
     </div>
-
-    <div id="timeline">
-        <!-- Timeline events will be dynamically inserted here -->
-    </div>
-
     <script>
-        // JavaScript to implement filtering and search functionalities
-        const events = []; // Events from _data/events.yml
+        mermaid.initialize({ startOnLoad: true });
 
-        function loadEvents() {
-            // Load the events from the YAML file (this would typically be done through an API or server-side code)
+        function filterEvents(query) {
+            var events = document.querySelectorAll('.timeline pre');
+            events.forEach(event => {
+                if (event.innerText.includes(query)) {
+                    event.style.display = 'block';
+                } else {
+                    event.style.display = 'none';
+                }
+            });
         }
-
-        function filterEvents() {
-            // Filter events based on the selected year, category, and search input
-        }
-
-        document.getElementById('year-filter').addEventListener('change', filterEvents);
-        document.getElementById('category-filter').addEventListener('change', filterEvents);
-        document.getElementById('search').addEventListener('input', filterEvents);
-
-        loadEvents();
     </script>
 </body>
-
 </html>
