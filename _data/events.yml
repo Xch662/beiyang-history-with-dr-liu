@@ -1,0 +1,35 @@
+- date: 1912-01-01  
+  name: Proclamation of the Republic of China  
+  description: The Republic of China was established, ending over 2,000 years of imperial rule.  
+  location: Nanjing  
+  significance: Marked the beginning of a new political era in China.
+
+- date: 1912-05-01  
+  name: Founding of the Beiyang Army  
+  description: The Beiyang Army, a key military force in the early republic, was officially formed.  
+  location: Beijing  
+  significance: Played a significant role in the political power struggles following the fall of the Qing dynasty.
+
+- date: 1913-10-01  
+  name: First National Assembly  
+  description: The First National Assembly convened, aiming to establish a democratic governance structure.  
+  location: Beijing  
+  significance: Important step towards democracy, though later suppressed.
+
+- date: 1917-02-01  
+  name: Warlord Era Begins  
+  description: Internal conflicts escalated, marking the start of the warlord era in China.  
+  location: Various  
+  significance: Fragmented control of China and led to instability.
+
+- date: 1924-01-01  
+  name: Feng Yuxiang's Coup  
+  description: General Feng Yuxiang seized control of Beijing, forcing government officials out.  
+  location: Beijing  
+  significance: Represented a changing power dynamic among warlords.
+
+- date: 1926-06-01  
+  name: Northern Expedition Begins  
+  description: The Nationalist forces under Chiang Kai-shek began the Northern Expedition to unify China.  
+  location: Southern China to Northern China  
+  significance: Aimed at ending warlord rule and re-establishing central authority.
